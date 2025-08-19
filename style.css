@@ -1,0 +1,44 @@
+/* grid > item > img */
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid {
+    width: 100%;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    overflow: auto;
+
+    resize: both;
+    gap: 10px;
+}
+
+.grid .item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.grid img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pokemons img{
+    height: 300px;
+    width: 300px;
+}
+
+button{
+    padding: 30px;
+}
