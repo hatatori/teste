@@ -8,73 +8,29 @@
 
     <link rel="stylesheet" href="./style.css">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script defer src="./script.js"></script>
 
 </head>
 
 <body>
 
+    <div>
+        <button  style="margin:  auto;"  onclick="arquivo.click()" class="button-78">ESCOLHER ARQUIVO</button>
 
-    <section class="grid">
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/1.png" alt="">
-        </div>
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/2.png" alt="">
-        </div>
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/3.png" alt="">
-        </div>
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/4.png" alt="">
-        </div>
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/5.png" alt="">
-        </div>
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/6.png" alt="">
-        </div>
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/7.png" alt="">
-        </div>
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/8.png" alt="">
-        </div>
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/9.png" alt="">
-        </div>
-        <div class="item"><img
-                src="https://tecnicofat.github.io/qualificasp/programacao-web/padaria_pessoas_medium/1x1/10.png" alt="">
-        </div>
-    </section>
+        <form id="formulario" enctype="multipart/form-data">
+            <input type="file" id="arquivo" name="arquivo">
+        </form>
 
-    <br>
+        <button style="margin: 10px auto;" class="button-88" id="btnEnviar">enviar</button>
 
-    
-    <a href="https://www.youtube.com/embed/8HVM85G2amU">
-        <button>VAI</button>
-    </a>
-    
-
-    <br>
-
-    <button onclick="intervalo_pokemon(0, 10)">1</button>
-    <button onclick="intervalo_pokemon(10, 20)">2</button>
-    <button onclick="intervalo_pokemon(20, 30)">3</button>
-    <button onclick="intervalo_pokemon(30, 40)">4</button>
-    <button onclick="intervalo_pokemon(40, 50)">5</button>
-    <button onclick="intervalo_pokemon(50, 60)">6</button>
-
-
-    <br>
-
-    <secction id="div_pokemons" class="pokemons">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg">
-    </secction>
-
+    </div>
 
 
 </body>

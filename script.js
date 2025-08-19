@@ -1,20 +1,37 @@
-const div_pokemons = document.querySelector("#div_pokemons")
-
  
 
-function intervalo_pokemon(start=0, end=10) {
-    div_pokemons.innerHTML = ""
 
-    // const start = 0
-    // const end = 10
+const arquivo = document.querySelector("#arquivo")
 
-    for (let i = start; i < end; i++) {
-        if(i>0){
-            const img = new Image()
-            img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${i}.svg`
-            div_pokemons.appendChild(img)
-        }
-    }
+const formulario = document.getElementById("formulario");
+const btnEnviar = document.getElementById("btnEnviar");
+
+btnEnviar.addEventListener('click', () => enviar())
+ 
+
+function enviar() {
+
+    const formData = new FormData(formulario);
+
+    fetch("https://6f0f8p43-3000.brs.devtunnels.ms/enviar", {
+    // fetch("http://localhost:3000/enviar", {
+        method: "POST",
+        body: formData,
+    })
+        .then(e => {
+            Swal.fire({
+                title: "Foi!",
+                text: "Arquivo enviado",
+                icon: "success"
+            });
+        })
+        .error(e => {
+            Swal.fire({
+                title: "Deu ruim",
+                text: "Arquivo não enviado",
+                icon: "error"
+            });
+        })
+ 
 }
 
-intervalo_pokemon(0, 10)
